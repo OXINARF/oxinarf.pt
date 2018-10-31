@@ -1,15 +1,16 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
+	Based on Aerial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
+		<title>Francisco Ferreira - Software Development services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<base target="_blank" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,28 +21,45 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+						<h1>Francisco Ferreira</h1>
+						<h2>Software Developer</h2>
+						<p>Leveraging my experience as <b><a href="http://ardupilot.org">ArduPilot</a></b> main code reviewer, I provide <b>consultancy services</b>, especially focused on <b>custom firmware development</b> and <b>support</b></p>
 						<nav>
 							<ul>
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="" class="icon fas fa-envelope"><span class="label">E-mail</span></a></li>
+								<li><a href="https://github.com/OXINARF" class="icon fab fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://linkedin.com/in/OXINARF" class="icon fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://gitter.im/OXINARF" class="icon fab fa-gitter"><span class="label">Gitter</span></a></li>
+								<li><a href="https://join.skype.com/invite/aJQAsSr36ogd" class="icon fab fa-skype"><span class="label">Skype</span></a></li>
+								<li><a href="https://twitter.com/OXINARF" class="icon fab fa-twitter"><span class="label">Twitter</span></a></li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright">Photo at <a href="http://herdadedosmestres.pt">Herdade dos Mestres</a> | Design based on: <a href="http://html5up.net">HTML5 UP</a></span>
 					</footer>
 
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.onload = function() {
+				var chars = '548m1.fi:63a2@otnp7lw%';
+				var char_sequence = '3;7C?>8DE90E9<EB:7EB1E90=>EB27@E94EB<65A?';
+				var output = '';
+
+				for(j = 0; j < char_sequence.length; j++) {
+					output += chars.charAt(char_sequence.charCodeAt(j) - 48);
+				}
+
+				var links = document.getElementsByClassName('fa-envelope');
+				for(j = 0; j < links.length; j++) {
+					links[j].href = output
+				}
+
+				document.body.classList.remove('is-preload');
+			}
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
